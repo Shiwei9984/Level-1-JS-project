@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count De Money</title>
+</head>
+<body onload = "initialization()">
+   <audio id = "coin" src = "coin.mp3" autoplay = false></audio>
+   <h1>Count De Money!!!!!</h1>
+   <br>
+   <h2>Penny</h2>
+   <button onclick = "addPenny()" id="addForPenny">Add Penny</button> 
+   <button onclick = "subtractPenny()" id="subtractForPenny">Subtract Penny</button>
+   <div id="pennyCount"></div>
+   <div id="pennyVal"></div>
+   <br>
+   <h2>Nickle</h2>
+   <button onclick = "addNickle()"id="addForNickle">Add Nickle</button> 
+   <button onclick = "subtractNickle()"id="subtractForNickle">Subtract Nickle</button>
+   <div id="nickleCount"></div>
+   <div id="nickleVal"></div>
+   <br>
+   <h2>Dime</h2>
+   <button onclick = "addDime()"id="addForDime">Add Dime</button> 
+   <button onclick = "subtractDime()"id="subtractForDime">Subtract Dime</button>
+   <div id="dimeCount"></div>
+   <div id="dimeVal"></div>
+   <br>
+   <h2>Quarter</h2>
+   <button onclick = "addQuarter()" id="addForQuarter">Add Quarter</button> 
+   <button onclick = "subtractQuarter()"id="subtractForQuarter">Subtract Quarter</button>
+   <div id="quarterCount"></div>
+   <div id="quarterVal"></div>
+   <br>
+   <h2>Total Money</h2>
+   <div id="total"></div>
+</body>
+</html>
